@@ -2,7 +2,7 @@
 
 public class BankTerminal
 {
-    public Action<int> OnMoneyWithdraw;
+    public event Action<int> OnMoneyWithdraw;
 
     public void Withdraw(int amount)
     {
@@ -18,11 +18,11 @@ class Program
 
         terminal.OnMoneyWithdraw += (amount) => Console.WriteLine($"Знято: {amount} грн");
 
-        terminal.OnMoneyWithdraw = null;
-
-        terminal.OnMoneyWithdraw?.Invoke(999999); 
+        // terminal.OnMoneyWithdraw = null; // Помилка компіляції!
+        
+        // terminal.OnMoneyWithdraw.Invoke(500); // Помилка компіляції!
 
         terminal.Withdraw(100);
     }
 }
-// нічо не відбувається
+// воо
