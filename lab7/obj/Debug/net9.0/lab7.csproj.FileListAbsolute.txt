@@ -1,0 +1,14 @@
+D:\needs_\opam lab\lab 7\lab7\bin\Debug\net9.0\lab7.exe
+D:\needs_\opam lab\lab 7\lab7\bin\Debug\net9.0\lab7.deps.json
+D:\needs_\opam lab\lab 7\lab7\bin\Debug\net9.0\lab7.runtimeconfig.json
+D:\needs_\opam lab\lab 7\lab7\bin\Debug\net9.0\lab7.dll
+D:\needs_\opam lab\lab 7\lab7\bin\Debug\net9.0\lab7.pdb
+D:\needs_\opam lab\lab 7\lab7\obj\Debug\net9.0\lab7.GeneratedMSBuildEditorConfig.editorconfig
+D:\needs_\opam lab\lab 7\lab7\obj\Debug\net9.0\lab7.AssemblyInfoInputs.cache
+D:\needs_\opam lab\lab 7\lab7\obj\Debug\net9.0\lab7.AssemblyInfo.cs
+D:\needs_\opam lab\lab 7\lab7\obj\Debug\net9.0\lab7.csproj.CoreCompileInputs.cache
+D:\needs_\opam lab\lab 7\lab7\obj\Debug\net9.0\lab7.dll
+D:\needs_\opam lab\lab 7\lab7\obj\Debug\net9.0\refint\lab7.dll
+D:\needs_\opam lab\lab 7\lab7\obj\Debug\net9.0\lab7.pdb
+D:\needs_\opam lab\lab 7\lab7\obj\Debug\net9.0\lab7.genruntimeconfig.cache
+D:\needs_\opam lab\lab 7\lab7\obj\Debug\net9.0\ref\lab7.dll
