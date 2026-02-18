@@ -1,28 +1,15 @@
 ﻿using System;
 
-public class BankTerminal
-{
-    public event Action<int> OnMoneyWithdraw;
+Func<double, double> discountCalculator = (price) => price * 0.95;
+discountCalculator += (price) => price * 0.90;
+discountCalculator += (price) => price - 100;
 
-    public void Withdraw(int amount)
-    {
-        OnMoneyWithdraw?.Invoke(amount);
-    }
+double currentPrice = 1000;
+
+foreach (var method in discountCalculator.GetInvocationList())
+{
+    var func = (Func<double, double>)method;
+    currentPrice = func(currentPrice);
 }
 
-class Program
-{
-    static void Main()
-    {
-        BankTerminal terminal = new BankTerminal();
-
-        terminal.OnMoneyWithdraw += (amount) => Console.WriteLine($"Знято: {amount} грн");
-
-        // terminal.OnMoneyWithdraw = null; // Помилка компіляції!
-        
-        // terminal.OnMoneyWithdraw.Invoke(500); // Помилка компіляції!
-
-        terminal.Withdraw(100);
-    }
-}
-// воо
+Console.WriteLine($"Результат знижок: {currentPrice}");
